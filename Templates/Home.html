@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>learning web</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        #banner {
+            height: 360px;
+            width: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center mt-2 mb-2">Job Career</h1>
+        <img id="banner" src="\static\Career.jpg" class="img-fluid">
+        <p class="lead">
+            It is important to take care of the patient, to be followed by the patient, but it will happen at such a
+            time
+            that there is a lot of work and pain. There is no need unless there is. Dignissim convallis aenean et tortor
+            at
+            risus viverra adipiscing. The pulvinor of the jaws is not a whole element. Lacinia who or eros until and
+            hate
+            the time of treatment. Maecenas put the quiver of the valley to the lion of the disease. And the nets and
+            males
+            of the famine and the ugly need of the maecena. Football is easy, but I hate disease, but I hate bronze. Now
+            he
+            needs the internet but the cartoon itself now. Ultricies sad there are no trucks for the tortor at the
+            author of
+            the urn.
+        </p>
+        <h2 class="text-center">
+            Open Positions
+        </h2>
+        <div>
+            {% for job in jobs %}
+              {% include 'jobitem.html' %}
+            {% endfor %}
+        </div>
+        <div class="text-center">
+            <button class="btn btn-primary btn-sm">Contact Us</button>
+            <p class="mt-4">Copyright 2023</p>
+        </div>
+    </div>
+</body>
+
+</html>
